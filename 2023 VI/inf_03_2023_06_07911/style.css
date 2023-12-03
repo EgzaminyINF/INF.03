@@ -1,0 +1,36 @@
+*{
+    font-family: Tahoma;
+}
+#baner, #stopka {
+    background: saddlebrown;
+    color: white;
+    padding: 3px;
+    text-align: center;
+    clear: both;
+}
+#lewy, #prawy{
+    background: Tan;
+    height: 400px;
+    width: 40%;
+    float: left;
+}
+#srodkowy{
+    background: wheat;
+    height: 400px;
+    width: 20%;
+    float: left;
+}
+img{
+    margin-right: 20px;
+    float: right;
+}
+h4{
+    text-align: center;
+}
+input{
+    margin: 5px;
+}
+li:hover{
+    background: sienna;
+    color: white;
+}

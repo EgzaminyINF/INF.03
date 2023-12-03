@@ -1,0 +1,4 @@
+1. SELECT `nazwa`, `cena` FROM `towary` LIMIT 4; 
+2. SELECT `cena` FROM `towary` WHERE `nazwa` LIKE 'Ekierka' 
+3. UPDATE `dostawcy` SET `nazwa`='Artkuly szkolne' WHERE id=2
+4. SELECT towary.promocja, COUNT(*) FROM towary, `dostawcy` WHERE towary.idDostawcy=dostawcy.id GROUP BY towary.promocja

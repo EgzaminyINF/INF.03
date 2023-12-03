@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacja paliw</title>
+    <link rel="stylesheet" href="styl2.css">
+</head>
+<body>
+    <div id="baner">
+        <h1>Całodobowa stacja paliw</h1>
+    </div>
+    <div id="menu">
+        <a href="stacja.html"><img src="home.png" alt=""></a>
+        <a href="obliczenia.html"><img src="znak.png" alt=""></a>
+        <a href="kwerendy.txt">Pobierz dokument</a>
+    </div>
+    <div id="lewy">
+        <h2>Orientacyjny koszt paliwa</h2>
+        Rodzaj paliwa (1-benzyna, 2-olej napędowy) <br>
+        <input type="number" id="rodzaj"> <br>
+        Ile litrów? <br>
+        <input type="number" id="ile"> <br>
+        <input type="button" value="Oblicz" onclick="oblicz()">
+        <p id="wynik"></p>
+    </div>
+    <div id="prawy">
+        <img src="samochod.png" alt="samochód" id="auto">
+    </div>
+    <div id="stopka">
+        <p>Stronę opracował: PESEL</p>
+    </div>
+    <script>
+        function oblicz() {
+            let rodzaj = document.getElementById("rodzaj").value
+            let ile = document.getElementById("ile").value
+            if (rodzaj == 1){
+                koszt = 4 * ile
+            } else if(rodzaj == 2){
+                koszt = 3.5 * ile
+            }else{
+                koszt = 0
+            }
+            document.getElementById("wynik").innerHTML = "koszt paliwa: " + koszt + " zł"
+        }
+    </script>
+</body>
+</html>

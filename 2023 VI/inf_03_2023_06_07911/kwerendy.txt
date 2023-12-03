@@ -1,0 +1,4 @@
+1. INSERT INTO `czytelnicy` (`id`, `imie`, `nazwisko`, `kod`) VALUES (NULL, 'Ewelina', 'Romanowska', '56677'); 
+2. SELECT `imie`, `nazwisko` FROM `czytelnicy` ORDER BY `nazwisko` ASC 
+3. SELECT `tytul` FROM `ksiazki` WHERE `id_autor` = 8 
+4. SELECT autorzy.nazwisko, COUNT(*) as ile_tytulow FROM autorzy, `ksiazki` WHERE autorzy.id=ksiazki.id_autor GROUP BY autorzy.nazwisko;

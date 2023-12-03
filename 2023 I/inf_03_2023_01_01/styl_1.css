@@ -1,0 +1,42 @@
+*{
+    font-family: Cambria;
+}
+#baner, #stopka{
+    background: #829EB9;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+#lewy, #prawy{
+    background: #b3c6d9;
+    height: 400px;
+    width: 25%;
+    padding-top: 100px;
+    float: left;
+}
+#srodkowy{
+    background: #e0e9f1;
+    height: 400px;
+    width: 50%;
+    text-align: center;
+    padding-top: 100px;
+    float: left;
+}
+table{
+    border: 1px solid dimgray;
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+}
+td, th{
+    border: 1px solid dimgray;
+    border-collapse: collapse;
+}
+td:hover{
+    background: steelblue;
+    color: white;
+}
+img{
+    width: 100%;
+    border-radius: 20px;
+}

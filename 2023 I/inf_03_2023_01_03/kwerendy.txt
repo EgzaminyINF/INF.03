@@ -1,0 +1,9 @@
+1. SELECT `nazwa`, `ulica` FROM `kwiaciarnie` WHERE `miasto` LIKE 'Malbork' 
+2. SELECT id_kwiaciarni, COUNT(*) FROM `zamowienia` GROUP BY id_kwiaciarni; 
+3. SELECT kwiaciarnie.nazwa, kwiaciarnie.miasto, zamowienia.kwiaty FROM `zamowienia`, kwiaciarnie WHERE zamowienia.id_kwiaciarni=kwiaciarnie.id_kwiaciarni and data="2017-01-07"; 
+4. CREATE TABLE `klienci` (
+    `id` INT NOT NULL AUTO_INCREMENT , 
+    `imie` VARCHAR(15) NOT NULL , 
+    `nazwisko` VARCHAR(15) NOT NULL , 
+    `rabat` INT NOT NULL , PRIMARY KEY (`id`)
+); 
